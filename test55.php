@@ -1,19 +1,10 @@
 <?php
 
-namespace HexletBasics\Conditionals\SwitchStatement;
+namespace HexletBasics\Logic\TernaryOperator;
 
-// BEGIN (write your solution here)
-function getNumberExplanation($number)
+// BEGIN
+function flipFlop($string)
 {
-    switch ($number){
-        case 666:
-            return 'devil number';
-        case 42: 
-            return 'answer for everything';
-        case 7:
-            return 'prime number';
-        default:
-            return null;
-    }
+    return $string === 'flip' ? 'flop' : 'flip';
 }
 // END

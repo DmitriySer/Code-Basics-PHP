@@ -1,10 +1,16 @@
 <?php
 
-namespace HexletBasics\Logic\TernaryOperator;
+namespace HexletBasics\Conditionals\IfElse;
 
-// BEGIN (write your solution here)
-function flipFlop($word)
+// BEGIN
+function normalizeUrl($url)
 {
-    return $word === 'flip' ? 'flop' : 'flip';
+    if (strpos($url, 'http://') === 0) {
+        $realUrl = substr($url, 7);
+    } else {
+        $realUrl = $url;
+    }
+
+    return "https://{$realUrl}";
 }
 // END

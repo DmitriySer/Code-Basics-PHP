@@ -1,10 +1,18 @@
 <?php
 
-namespace HexletBasics\Logic\LogicalOperators2;
+namespace HexletBasics\Logic\LogicalNegation;
+
+use function HexletBasics\Functions\mb_strrev;
 
 // BEGIN
-function isNeutralSoldier($armorColor, $shieldColor)
+function isPalindrome($word)
 {
-    return ($armorColor !== 'red' && $shieldColor === 'black');
+    $lowerWord = strtolower($word);
+    return $lowerWord === strrev($lowerWord);
+}
+
+function isNotPalindrome($word)
+{
+    return !isPalindrome($word);
 }
 // END

@@ -1,16 +1,13 @@
 <?php
 
-namespace HexletBasics\Conditionals\IfElse;
+namespace HexletBasics\Conditionals\IfStatement;
 
-// BEGIN
-function normalizeUrl($url)
+// BEGIN (write your solution here)
+function guessNumber($number)
 {
-    if (strpos($url, 'http://') === 0) {
-        $realUrl = substr($url, 7);
-    } else {
-        $realUrl = $url;
-    }
-
-    return "https://{$realUrl}";
+    if ($number === 42)
+        return ('You win!');
+    
+    return ('Try again!');
 }
 // END

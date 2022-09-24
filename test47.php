@@ -1,9 +1,10 @@
 <?php
 
-namespace HexletBasics\Logic\LogicalOperators;
+namespace HexletBasics\Logic\CombineExpressions;
 
-// BEGIN (write your solution here)
-function isLeapYear($year){
-    return $year % 400 === 0 || ($year % 4 === 0 && $year % 100 !== 0 );
+// BEGIN
+function isInternationalPhone($phone)
+{
+    return $phone[0] === '+';
 }
 // END

@@ -1,10 +1,10 @@
 <?php
 
-namespace HexletBasics\Logic\WeakTyping;
+namespace HexletBasics\Logic\LogicalOperators2;
 
-// BEGIN (write your solution here)
-function isFalsy($cheak)
+// BEGIN
+function isNeutralSoldier($armorColor, $shieldColor)
 {
-    return $cheak == false;
+    return ($armorColor !== 'red' && $shieldColor === 'black');
 }
 // END

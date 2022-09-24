@@ -1,18 +1,12 @@
 <?php
 
-namespace HexletBasics\Logic\LogicalNegation;
-
-use function HexletBasics\Functions\mb_strrev;
+namespace HexletBasics\Logic\LogicalOperators;
 
 // BEGIN
-function isPalindrome($word)
+function isLeapYear($year)
 {
-    $lowerWord = strtolower($word);
-    return $lowerWord === strrev($lowerWord);
-}
+    $result = $year % 400 === 0 || ($year % 4 === 0 && $year % 100 !== 0);
 
-function isNotPalindrome($word)
-{
-    return !isPalindrome($word);
+    return $result;
 }
 // END

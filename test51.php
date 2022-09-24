@@ -1,13 +1,10 @@
 <?php
 
-namespace HexletBasics\Conditionals\IfStatement;
+namespace HexletBasics\Logic\WeakTyping;
 
-// BEGIN (write your solution here)
-function guessNumber($number)
+// BEGIN
+function isFalsy($value)
 {
-    if ($number === 42)
-        return ('You win!');
-    
-    return ('Try again!');
+    return $value == false;
 }
 // END
